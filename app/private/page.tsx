@@ -3,12 +3,7 @@ import Link from 'next/link';
 import { pb } from '@/lib/pb_client';
 import { SyntheticEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-
-type Post = {
-  id: string;
-  title: string;
-  text: string;
-};
+import type { Post } from '@/types/post';
 
 export default function Private() {
   const router = useRouter();
